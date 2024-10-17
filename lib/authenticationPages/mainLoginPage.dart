@@ -1,3 +1,5 @@
+import 'package:appli/HomePage/home_page.dart';
+import 'package:appli/authenticationPages/signUpPage.dart';
 import 'package:flutter/material.dart';
 
 class MainLoginPage extends StatefulWidget {
@@ -26,11 +28,12 @@ class _MainLoginPageState extends State<MainLoginPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  const Icon(Icons.account_circle, size: 30.0,)
-                  ,TextFormField(
+                  const Icon(Icons.account_circle, size: 120.0,),
+                  const SizedBox(height: 40.0),
+                  TextFormField(
                     decoration: const InputDecoration(
                       border: UnderlineInputBorder(),
-                      labelText: 'Enter your email',
+                      labelText: 'Enter your Email',
                       labelStyle: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
@@ -48,7 +51,7 @@ class _MainLoginPageState extends State<MainLoginPage> {
                     keyboardType: TextInputType.emailAddress,
                   ),
 
-                  const SizedBox(height: 8),
+                  const SizedBox(height: 16),
 
                   TextFormField(
                     decoration: const InputDecoration(
@@ -68,6 +71,7 @@ class _MainLoginPageState extends State<MainLoginPage> {
                         color: Colors.black45,
                       ),
                     ),
+                    keyboardType: TextInputType.emailAddress,
                   ),
                   const SizedBox(height: 8,),
                  Align(
@@ -98,7 +102,7 @@ class _MainLoginPageState extends State<MainLoginPage> {
 
                   const SizedBox(height: 16,),
                   ElevatedButton(
-                    onPressed: () {}
+                    onPressed: () {()=>const HomePage();}
                   ,
                    style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 16),
@@ -117,6 +121,10 @@ class _MainLoginPageState extends State<MainLoginPage> {
                    ),
                   ),
                   const SizedBox(height: 16,),
+                  const Divider(
+                    color: Colors.grey,
+                    thickness: 1.0,
+                  ),
                   ElevatedButton.icon(
                     onPressed: () {},
                      label: const Text(
@@ -139,14 +147,20 @@ class _MainLoginPageState extends State<MainLoginPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Text(
-                        "Don't have a account? ",
+                        "Don't have an account? ",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
 
                         ),
                       ),
                       GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const SignUpPage(),)
+                            );
+                        },
                         child: const Text(
                           'Sign Up',
                           style: TextStyle(
