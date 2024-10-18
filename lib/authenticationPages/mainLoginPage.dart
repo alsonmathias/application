@@ -1,4 +1,5 @@
 import 'package:appli/HomePage/home_page.dart';
+import 'package:appli/authenticationPages/forgetPasswordPage.dart';
 import 'package:appli/authenticationPages/signUpPage.dart';
 import 'package:flutter/material.dart';
 
@@ -76,34 +77,40 @@ class _MainLoginPageState extends State<MainLoginPage> {
                   const SizedBox(height: 8,),
                  Align(
                     alignment: Alignment.centerRight,
-                  
-                    child: TextButton(
-                      onPressed: () {
-                        // Define the action for the button press
-                      },
-                      child: const Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Icon(Icons.refresh),
-                          SizedBox(width: 8),  // Adds some spacing between the icon and text
-                          Text(
-                            'Forgot Password?',
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      const Icon(Icons.refresh),
+                      TextButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const ForgetPasswordPage()),
+                          );
+                        },
+                         child: const Text(
+                          'Forgot Password?',
                             style: TextStyle(
                             color: Color.fromARGB(255, 96, 136, 255),
                               fontSize: 14,
                               fontWeight: FontWeight.bold,
                             ),
-                          ),
-                        ],
-                      ),
-                    ),
+                         )
+                         )
+                    ],
+                  ),
+                  
                   ),
 
                   const SizedBox(height: 16,),
                   ElevatedButton(
-                    onPressed: () {()=>const HomePage();}
-                  ,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const ForgetPasswordPage()),
+                      );
+                      },
+                  
                    style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     backgroundColor: const Color.fromARGB(255, 42, 212, 255),
@@ -121,10 +128,7 @@ class _MainLoginPageState extends State<MainLoginPage> {
                    ),
                   ),
                   const SizedBox(height: 16,),
-                  const Divider(
-                    color: Colors.grey,
-                    thickness: 1.0,
-                  ),
+                  
                   ElevatedButton.icon(
                     onPressed: () {},
                      label: const Text(
