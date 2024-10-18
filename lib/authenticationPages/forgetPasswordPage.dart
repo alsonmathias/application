@@ -34,7 +34,7 @@ const ForgetPasswordPage({ Key? key }) : super(key: key);
                   TextFormField(
                     decoration: const InputDecoration(
                       border:  UnderlineInputBorder(),
-                    labelText: 'Enter your email',
+                    labelText: 'Enter your Email',
                     labelStyle: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
@@ -72,7 +72,7 @@ const ForgetPasswordPage({ Key? key }) : super(key: key);
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
-                  "Remembered your password? ",
+                  "Remember your Password? ",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                   ),

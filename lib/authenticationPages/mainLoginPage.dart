@@ -107,7 +107,7 @@ class _MainLoginPageState extends State<MainLoginPage> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const ForgetPasswordPage()),
+                        MaterialPageRoute(builder: (context) => const HomePage()),
                       );
                       },
                   
