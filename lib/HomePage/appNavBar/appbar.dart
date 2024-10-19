@@ -6,39 +6,30 @@ const CustomAppBar({ super.key });
   @override
   Widget build(BuildContext context){
     return AppBar(
-      iconTheme: IconThemeData(
-        color: Theme.of(context).primaryColorLight,
+      iconTheme: const IconThemeData(
+        color: Color.fromARGB(255, 0, 0, 0),
       ),
-      backgroundColor: Theme.of(context).primaryColor,
+      backgroundColor: const Color.fromARGB(255, 116, 179, 231),
       actions: [
         IconButton(
           onPressed: () {},
-           icon: Icon(
+           icon: const Icon(
             CupertinoIcons.bell,
-            color: Theme.of(context).primaryColorLight,
+            color: Color.fromARGB(255, 0, 0, 0),
             ),
            ),
            IconButton(
             onPressed: () {},
-             icon:  Icon(
+             icon:  const Icon(
               CupertinoIcons.ellipsis_vertical,
-              color: Theme.of(context).primaryColorLight,
+              color: Color.fromARGB(255, 0, 0, 0),
              ),
-             ),
-             IconButton(
-              onPressed: () {
-                
-              },
-               icon: Icon(
-                CupertinoIcons.settings,
-                color: Theme.of(context).primaryColorLight,
-               )
-            ),
+             ),         
       ],
-      title: Text(
+      title: const Text(
         'Aarc',
         style: TextStyle(
-          color: Theme.of(context).primaryColorLight,
+          color: Colors.white,
           fontWeight: FontWeight.bold,
           fontSize: 21.0,
         ),

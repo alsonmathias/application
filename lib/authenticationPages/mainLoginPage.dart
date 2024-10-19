@@ -2,6 +2,7 @@ import 'package:appli/HomePage/home_page.dart';
 import 'package:appli/authenticationPages/forgetPasswordPage.dart';
 import 'package:appli/authenticationPages/signUpPage.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MainLoginPage extends StatefulWidget {
   const MainLoginPage({ Key? key }) : super(key: key);
@@ -76,9 +77,9 @@ class _MainLoginPageState extends State<MainLoginPage> {
                   ),
                   const SizedBox(height: 8,),
                  Align(
-                    alignment: Alignment.centerRight,
+                    alignment: Alignment.centerLeft,
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       const Icon(Icons.refresh),
                       TextButton(
@@ -128,25 +129,58 @@ class _MainLoginPageState extends State<MainLoginPage> {
                    ),
                   ),
                   const SizedBox(height: 16,),
-                  
-                  ElevatedButton.icon(
-                    onPressed: () {},
-                     label: const Text(
-                      'Login with Google', 
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
-                     ),
-                     icon: const Icon(Icons.g_mobiledata), // add google icon image and specify width and height
-                     style: ElevatedButton.styleFrom(
-                        padding: const EdgeInsets.symmetric(vertical: 16),
-                        backgroundColor: const Color.fromARGB(255, 42, 212, 255),
-                        shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12),
-                      ),
+                   const Divider(
+                    color: Colors.grey,
+                   ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      // Google Login Button
+                      IconButton(
+                        onPressed: () {},
+                         icon: Image.asset(
+                          'assets/google.png',
+                          height: 24.0,
+                          width: 24.0,
+                         )
+                         ),
+                         IconButton(
+                        onPressed: () {},
+                         icon: Image.asset(
+                          'assets/twitter.png',
+                          height: 24.0,
+                          width: 24.0,
+                         )
+                         ),
+                      IconButton(
+                        onPressed: () {},
+                         icon: Image.asset(
+                          'assets/facebook.png',
+                          height: 24.0,
+                          width: 24.0,
+                         )
+                         ),
+                    ],
                     ),
-                  ),
+                  // ElevatedButton.icon(
+                  //   onPressed: () {},
+                  //    label: const Text(
+                  //     'Login with Google', 
+                  //     style: TextStyle(
+                  //       fontWeight: FontWeight.bold,
+                  //     ),
+                  //    ),
+                  //    icon: const Icon(Icons.g_mobiledata), // add google icon image and specify width and height
+                  //    style: ElevatedButton.styleFrom(
+                  //       padding: const EdgeInsets.symmetric(vertical: 16),
+                  //       backgroundColor: const Color.fromARGB(255, 42, 212, 255),
+                  //       shape: RoundedRectangleBorder(
+                  //       borderRadius: BorderRadius.circular(12),
+                  //     ),
+                  //   ),
+                  // ),
                    const SizedBox(height: 16,),
+                  
                    Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
