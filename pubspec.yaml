@@ -29,11 +29,23 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   flutter:
-    sdk: flutter   
+    sdk: flutter 
+  flutter_native_splash: ^2.2.8  
+
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+
+flutter_native_splash:
+  color: "#ffffff"         # Background color
+  image: assets/logo.png   # Path to your custom logo (use a transparent PNG)
+  android: true            # Enable Android splash screen
+  ios: true                # Enable iOS splash screen
+  android_gravity: center  # Align logo to center (optional)
+  ios_content_mode: center # Align logo to center (optional)
+
 
 dev_dependencies:
   flutter_test:

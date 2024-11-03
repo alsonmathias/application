@@ -117,6 +117,7 @@ class _MainLoginPageState extends State<MainLoginPage> {
                     backgroundColor: const Color.fromARGB(255, 42, 212, 255),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
+                      
                     ),
                    ), 
                    child: const Text(
