@@ -1,5 +1,6 @@
 import 'package:appli/HomePage/appNavBar/appbar.dart';
 import 'package:appli/HomePage/appNavBar/navdrawer.dart';
+import 'package:appli/HomePage/bodyPage/body.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -15,7 +16,7 @@ class _HomePageState extends State<HomePage> {
     return const Scaffold(
       drawer: Navdrawer(),
       appBar: CustomAppBar(),
-      
+      body: Body(),
     );
   }
 }
