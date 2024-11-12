@@ -7,29 +7,29 @@ const CustomAppBar({ super.key });
   Widget build(BuildContext context){
     return AppBar(
       iconTheme: const IconThemeData(
-        color: Color.fromARGB(255, 0, 0, 0),
+        color: Color.fromARGB(255, 255, 255, 255),
       ),
-      backgroundColor: const Color.fromARGB(255, 116, 179, 231),
+      backgroundColor: const Color(0xFF57B9FF),
       actions: [
         IconButton(
           onPressed: () {},
            icon: const Icon(
             CupertinoIcons.bell,
-            color: Color.fromARGB(255, 0, 0, 0),
+            color: Color.fromARGB(255, 255, 255, 255),
             ),
            ),
            IconButton(
             onPressed: () {},
              icon:  const Icon(
               CupertinoIcons.ellipsis_vertical,
-              color: Color.fromARGB(255, 0, 0, 0),
+              color: Color.fromARGB(255, 255, 255, 255),
              ),
              ),         
       ],
       title: const Text(
         'Aarc',
         style: TextStyle(
-          color: Colors.white,
+          color: Color.fromARGB(255, 255, 255, 255),
           fontWeight: FontWeight.bold,
           fontSize: 21.0,
         ),

@@ -15,58 +15,71 @@ class _NavdrawerState extends State<Navdrawer> {
       child: ListView(
         
         padding: EdgeInsets.zero,
-        children: [
+        children: const [
           
           UserAccountsDrawerHeader(
-            accountName: const Text('Alson Mathias'),
-          accountEmail: const Text('alsonmathias1209@gmail.com'),
-          
-          currentAccountPicture: Transform.translate(
-              offset: const Offset(80, 8),
-              child: const CircleAvatar(
-              backgroundColor: Colors.white,
-              child: Text(
-                "A",
-                style: TextStyle(fontSize: 24.0),
+            accountName: Text(
+              'Alson Mathias',
+              style: TextStyle(
+                color: Color.fromARGB(255, 255, 255, 255)
               ),
               
               ),
+          accountEmail: Text(
+            'alsonmathias1209@gmail.com',
+            style: TextStyle(
+                color: Color.fromARGB(255, 255, 255, 255)
+              ),
             ),
-          decoration: const BoxDecoration(
-           color: Color.fromARGB(255, 116, 179, 231),
+          
+          currentAccountPicture:
+               CircleAvatar(
+              backgroundColor: Color.fromARGB(255, 255, 255, 255),
+              child: Text(
+                "A",
+                style: TextStyle(
+                  fontSize: 24.0,
+                  color: Color(0xFF007BFF), // Set your hex color here
+                ),
+              ),
+              
+              
+            ),
+          decoration: BoxDecoration(
+           color: Color(0xFF57B9FF),
             ),
           ),
-          const ListTile(
+          ListTile(
             leading: Icon(Icons.message),
             title: Text('Messages'),
             // onTap: () {}
           ),
-          const Divider(),
-          const ListTile(
+          Divider(),
+          ListTile(
             leading: Icon(Icons.account_circle),
             title: Text('Profile'),
           ),
-          const Divider(),
-          const ListTile(
+          Divider(),
+          ListTile(
             leading: Icon(Icons.settings),
             title: Text('Settings'),
             
           ),
-          const Divider(),
-          const ListTile(
+          Divider(),
+          ListTile(
             leading: Icon(Icons.info),
             title: Text(
               "About"
             ),
           ),
-          const Divider(),
-          const ListTile(
+          Divider(),
+          ListTile(
             leading: Icon(Icons.logout),
             title: Text(
               "Logout"
             ),
           ),
-          const Divider(),
+          Divider(),
         ],
       ),
     );

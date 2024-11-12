@@ -42,7 +42,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           ),
                           focusedBorder: UnderlineInputBorder(
                             borderSide: BorderSide(
-                              color: Color.fromARGB(255, 19, 22, 112)
+                              color: Color.fromARGB(255, 0, 0, 0)
                             )
                           ) 
                         ),
@@ -60,7 +60,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           ),
                           focusedBorder: UnderlineInputBorder(
                             borderSide: BorderSide(
-                              color: Color.fromARGB(255, 19, 22, 112)
+                              color: Color.fromARGB(255, 0, 0, 0)
                             )
                           ) 
                         ),
@@ -79,7 +79,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       ),
                       focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(
-                          color: Color.fromARGB(255, 19, 22, 112)
+                          color: Color.fromARGB(255, 0, 0, 0)
                         ),
             
                       ),
@@ -100,7 +100,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       ),
                       focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(
-                          color: Color.fromARGB(255, 19, 22, 112)
+                          color: Color.fromARGB(255, 0, 0, 0)
                         ),
             
                       ),
@@ -119,7 +119,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       ),
                       focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(
-                          color: Color.fromARGB(255, 19, 22, 112)
+                          color: Color.fromARGB(255, 0, 0, 0)
                         ),
             
                       ),
@@ -138,7 +138,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       ),
                       focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(
-                          color: Color.fromARGB(255, 19, 22, 112)
+                          color: Color.fromARGB(255, 0, 0, 0)
                         ),
             
                       ),
@@ -150,7 +150,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.symmetric(vertical: 16.0),
-                      backgroundColor: const Color.fromARGB(255, 42, 212, 255),
+                      backgroundColor: const Color(0xFF57B9FF),
                         shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
                       ),
@@ -186,7 +186,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         child: const Text(
                           'Login',
                           style: TextStyle(
-                           color: Color.fromARGB(255, 96, 136, 255),
+                           color: Color(0xFF57B9FF),
                            fontWeight: FontWeight.bold,
                           ),
                         ),

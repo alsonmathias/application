@@ -41,7 +41,7 @@ const ForgetPasswordPage({ Key? key }) : super(key: key);
                     ),
                     focusedBorder: UnderlineInputBorder(
                       borderSide: BorderSide(
-                        color: Color.fromARGB(255, 19, 22, 112)
+                        color: Color.fromARGB(255, 0, 0, 0)
                         ),
                     ),
                     ),
@@ -52,7 +52,7 @@ const ForgetPasswordPage({ Key? key }) : super(key: key);
                   ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
-                    backgroundColor: const Color.fromARGB(255, 42, 212, 255),
+                    backgroundColor: const Color(0xFF57B9FF),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12.0),
                     ),
@@ -84,7 +84,7 @@ const ForgetPasswordPage({ Key? key }) : super(key: key);
                   child: const Text(
                     'Login',
                     style: TextStyle(
-                      color: Color.fromARGB(255, 96, 136, 255),
+                      color: Color(0xFF57B9FF),
                       fontWeight: FontWeight.bold,
                     ),
                       ),

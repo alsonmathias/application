@@ -42,7 +42,7 @@ class _MainLoginPageState extends State<MainLoginPage> {
                       ),
                       focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(
-                          color: Color.fromARGB(255, 19, 22, 112)
+                          color: Color.fromARGB(255, 0, 0, 0)
                         ),
             
                       ),
@@ -65,7 +65,7 @@ class _MainLoginPageState extends State<MainLoginPage> {
                       ),
                       focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(
-                          color: Color.fromARGB(255, 19, 22, 112)
+                          color: Color.fromARGB(255, 0, 0, 0)
                         ),
             
                       ),
@@ -92,7 +92,7 @@ class _MainLoginPageState extends State<MainLoginPage> {
                          child: const Text(
                           'Forgot Password?',
                             style: TextStyle(
-                            color: Color.fromARGB(255, 96, 136, 255),
+                            color: Color(0xFF57B9FF),
                               fontSize: 14,
                               fontWeight: FontWeight.bold,
                             ),
@@ -114,7 +114,7 @@ class _MainLoginPageState extends State<MainLoginPage> {
                   
                    style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 16),
-                    backgroundColor: const Color.fromARGB(255, 42, 212, 255),
+                    backgroundColor: const Color(0xFF57B9FF),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
                       
@@ -203,7 +203,7 @@ class _MainLoginPageState extends State<MainLoginPage> {
                         child: const Text(
                           'Sign Up',
                           style: TextStyle(
-                           color: Color.fromARGB(255, 96, 136, 255),
+                           color: Color(0xFF57B9FF),
                            fontWeight: FontWeight.bold,
                           ),
                         ),
